@@ -9,6 +9,8 @@
   02. MAIN
   03. FOOTER
   04. MAIN (НАПОЛНЕНИЕ)
+  05. FOOTER (НАПОЛНЕНИЕ)
+  06. Вторая страница
 */
 
 /*-----------------------------------------------------------------------------------*/
@@ -245,4 +247,45 @@ footer.page-footer {
 
 .page-footer h3 {
   margin: 10px; 
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  06. Вторая страница
+/*-----------------------------------------------------------------------------------*/
+
+
+.blog2 {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.blog-item2 {
+  display: inline-block;
+  position: relative;
+  width: 500px;
+  min-height: 300px;
+  vertical-align: top;  
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px 20px;  
+  background: #2c3e50;
+  background-image:
+    linear-gradient(45deg, #34495e 25%, transparent 25%),
+    linear-gradient(-45deg, #34495e 25%, transparent 25%),
+    linear-gradient(135deg, #34495e 25%, transparent 25%),
+    linear-gradient(-135deg, #34495e 25%, transparent 25%);
+  background-position: 10px 0, 10px 0, 0 0, 0 0;
+  background-size: 20px 20px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.5em;
+  text-indent: 30px;
+}
+
+.date {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 14px;
+  color: #C0C0C0;
 }
