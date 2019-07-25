@@ -186,7 +186,7 @@ footer.page-footer {
 /*  04. MAIN(НАПОЛНЕНИЕ)
 /*-----------------------------------------------------------------------------------*/
 
-.pach1 {  
+.path1 {  
   width: 1200px;
   margin: 0 auto;
 }
@@ -207,8 +207,8 @@ footer.page-footer {
   display: inline-block;  
   vertical-align: top;
   margin: 40px 0px 40px 100px;
-  width: 300px;
-  min-height: 250px;
+  width: 400px;
+  height: 330px;
   border-radius: 10px;
   background: #150873 ;
   color: white;
@@ -216,6 +216,25 @@ footer.page-footer {
   padding: 20px;
 }
 
+.skill img {
+  border-radius: 5px;
+  margin: 0 5px 10px 0;
+  background: #fff;
+  padding: 5px;
+  width: 80px;
+  height: 80px;
+}
+
+.skill li {
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+.path1 p {
+  font-size: 20px;
+  line-height: 1.5em;
+  text-indent: 30px;
+}
 /*-----------------------------------------------------------------------------------*/
 /*  05. FOOTER (НАПОЛНЕНИЕ)
 /*-----------------------------------------------------------------------------------*/
