@@ -10,7 +10,10 @@
   03. FOOTER
   04. MAIN (НАПОЛНЕНИЕ)
   05. FOOTER (НАПОЛНЕНИЕ)
-  06. Вторая страница
+  06. блог
+  07. Портфолио
+  07.1. галерея
+
 */
 
 /*-----------------------------------------------------------------------------------*/
@@ -257,7 +260,7 @@ footer.page-footer {
 }
 
 /*-----------------------------------------------------------------------------------*/
-/*  06. Вторая страница
+/*  06. Блог
 /*-----------------------------------------------------------------------------------*/
 
 
@@ -298,7 +301,7 @@ footer.page-footer {
 }
 
 /*-----------------------------------------------------------------------------------*/
-/*  07. Портфолио (проба)
+/*  07. Портфолио
 /*-----------------------------------------------------------------------------------*/
 
 .fon {
@@ -313,11 +316,78 @@ footer.page-footer {
   background-size:16px 16px;
 }
 
-.dark {
-  padding: 50px;
+/*-----------------------------------------------------------------------------------*/
+/*  07.1. Портфолио (галерея)
+/*-----------------------------------------------------------------------------------*/
+
+.fon section {
+  margin: 30px auto;
+  width: 450px;
 }
 
-.fon p{
-  font-size: 20px;
+.h1-portf {
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+  font-weight: normal;
+  font-size: 28px;
   color: white;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider input[type="radio"] {
+  display: none;  
+}
+
+.slider-inner {
+  overflow: hidden;
+}
+
+.slider-slides {
+  width: 300%;
+  transition: transform 0.8s ease;
+}
+
+.slider-slides img {
+  width: 450px;
+  height: 320px;
+  float:left;
+}
+
+.slider-controls {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.slider-controls label {
+  display: inline-block;
+  margin: 0 3px;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  background-color: #cccccc;
+  border: 4px solid white;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  background-color: #666666;
+}
+
+#btn-1:checked ~ .slider-inner .slider-slides {
+  transform: translate(0);
+}
+
+#btn-2:checked ~ .slider-inner .slider-slides {
+  transform: translate(-450px);
+}
+
+#btn-3:checked ~ .slider-inner .slider-slides {
+  transform: translate(-900px);
 }
