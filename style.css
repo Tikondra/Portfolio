@@ -321,8 +321,9 @@ footer.page-footer {
 /*-----------------------------------------------------------------------------------*/
 
 .fon section {
-  margin: 30px auto;
-  width: 450px;
+  margin: 20px auto;
+  width: 400px;
+  padding-bottom: 30px;
 }
 
 .h1-portf {
@@ -352,8 +353,8 @@ footer.page-footer {
 }
 
 .slider-slides img {
-  width: 450px;
-  height: 320px;
+  width: 400px;
+  height: 400px;
   float:left;
 }
 
@@ -385,9 +386,9 @@ footer.page-footer {
 }
 
 #btn-2:checked ~ .slider-inner .slider-slides {
-  transform: translate(-450px);
+  transform: translate(-400px);
 }
 
 #btn-3:checked ~ .slider-inner .slider-slides {
-  transform: translate(-900px);
+  transform: translate(-800px);
 }
