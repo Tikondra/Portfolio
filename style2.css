@@ -263,8 +263,7 @@ footer.page-footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
-  height: 100%;
+  flex-wrap: wrap;  
 }
 
 .blog-item {
@@ -272,6 +271,7 @@ footer.page-footer {
   min-height: 300px;
   width: 500px;
   padding: 20px;
+  margin: 10px auto;
 
   background: #2c3e50;
   background-image:
@@ -297,4 +297,9 @@ footer.page-footer {
   right: 10px;
   font-size: 14px;
   color: #C0C0C0;
+}
+
+.blog-title {
+  font-size: 30px;
+  margin-left: 50px;
 }
