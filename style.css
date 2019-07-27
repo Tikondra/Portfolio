@@ -299,3 +299,48 @@ footer.page-footer {
   font-size: 14px;
   color: #C0C0C0;
 }
+
+/*-----------------------------------------------------------------------------------*/
+/*  05. CONTACT
+/*-----------------------------------------------------------------------------------*/
+
+.contact {
+  display: flex;
+  align-items: center;
+}
+
+.contact section {
+  border-left: 1px solid;
+  padding: 20px;
+  margin: 40px;
+  font-size: 20px;
+}
+
+.contact aside {
+  order: -1;
+  padding: 20px 0;
+  margin-left: 50px;
+}
+
+.contact a {
+  display: block;
+  width: 52px;
+  height: 52px;
+  background: url(img/ikon.png) no-repeat;  
+}
+
+.contact .insta {
+  background-position: -120px -2px;
+}
+
+.contact .git {  
+  background-position: -60px -2px;
+}
+
+.contact .fb {  
+  background-position: 0px -2px;
+}
+
+.contact span {
+  font-weight: bold;
+}
