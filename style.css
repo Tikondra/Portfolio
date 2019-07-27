@@ -216,8 +216,9 @@ footer.page-footer {
 .project {  
   border-radius: 10px;
   min-height: 350px;
-  width: 500px;
+  width: 600px;
   padding: 20px;
+  margin: 20px auto;
 
   background: #2c3e50;
   background-image:
@@ -235,13 +236,25 @@ footer.page-footer {
   text-indent: 30px;
 }
 
+.skil-img {
+  text-align: center;
+}
+
 .skill img {
   border-radius: 5px;
-  margin: 0 5px 10px 0;
+  margin: 0 10px 10px 0;
   background: #fff;
   padding: 5px;
   width: 80px;
-  height: 80px;
+  height: 80px;  
+}
+
+.project img {
+  float: right;
+  top: 20px;
+  width: 250px;
+  border-radius: 20px;
+  margin: 40px 5px;
 }
 
 /*-----------------------------------------------------------------------------------*/
