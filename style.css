@@ -264,13 +264,12 @@ footer.page-footer {
 .blog {
   display: flex; 
   flex-wrap: wrap;
-  justify-content: space-around;    
+  padding-top: 40px;     
 }
 
 .blog-item {
-  border-radius: 10px;
-  min-height: 250px;
-  width: 600px;
+  border-radius: 10px;  
+  width: 650px;
   padding: 20px;
   margin: 20px auto;
 
