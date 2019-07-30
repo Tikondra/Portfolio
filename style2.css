@@ -179,17 +179,14 @@ footer.page-footer {
 /*-----------------------------------------------------------------------------------*/
 
 .main {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: flex;  
   flex-wrap: wrap;
   padding: 40px;
 }
 
 .skill,
 .project {  
-  border-radius: 10px;
-  height: 360px;
+  border-radius: 10px;  
   width: 500px;
   padding: 20px;
   margin: 20px auto;
