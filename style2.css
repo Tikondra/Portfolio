@@ -80,7 +80,7 @@ header.page-header {
 /*  01.1 HEADER MAIN-MENU
 /*-----------------------------------------------------------------------------------*/
 .main-menu {  
-  text-align: center;
+  text-align: center;  
 }
 
 .main-menu li {
@@ -244,18 +244,20 @@ footer.page-footer {
 
 .portfolio-main {
   display: flex;
-  width: 50%;
-  border: 1px solid black;
+  width: 70%;  
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   
 }
 
-.portfolio-item {
-  width: 100px;
-  height: 100px;  
-  background: rgba(70, 50, 94, 0.5);
-  margin: 10px;
+.portfolio-item {  
+  
+}
+
+.portfolio-item img {
+  width: 400px;
+  border-radius: 10px;
 }
 
 /*-----------------------------------------------------------------------------------*/
