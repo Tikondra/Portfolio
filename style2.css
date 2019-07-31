@@ -22,7 +22,8 @@ body {
   background-color: #2c3e50;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
+  font-size: 18px;  
 }
 
 main {
@@ -38,6 +39,8 @@ a {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -73,7 +76,7 @@ header.page-header {
   width: 150px;
   height: 150px;
   position: absolute;
-  top: 20px;
+  top: 15px;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -179,18 +182,70 @@ footer.page-footer {
 /*-----------------------------------------------------------------------------------*/
 
 .main {
-  display: flex;  
+  display: flex;
   flex-wrap: wrap;
-  padding: 40px;
+  justify-content: space-around;
+  padding: 40px;  
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill ul {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.skill li {
+  background-color: #FF9E00;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 20px;
+  margin: 5px;
+}
+
+.skill li:hover {
+  background-color: #FF9640;
+}
+
+.skill h3 {
+  font-size: 22px;
+  text-align: center;
+}
+
+.skil-img {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skill img {
+  border-radius: 5px;
+  margin: 5px;
+  background: #fff;
+  padding: 5px;
+  width: 80px;
+  height: 80px;  
+}
+
+.project {
+  text-indent: 20px;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+.project img { 
+  float: left;
+  width: 250px;
+  border-radius: 10px;
+  margin-right: 20px; 
 }
 
 .skill,
-.project {  
-  border-radius: 10px;  
-  width: 500px;
-  padding: 20px;
-  margin: 20px auto;
-
+.project {
   background: #2c3e50;
   background-image:
     linear-gradient(45deg, rgba(52, 73, 94, 0.5) 25%, transparent 25%),
@@ -202,30 +257,11 @@ footer.page-footer {
   color: white;
   box-shadow: 10px 10px 10px 0 #4575D4;
 
-  font-size: 20px;
-  line-height: 1.5em;
-  text-indent: 30px;
-}
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
 
-.skil-img {
-  text-align: center;
-}
-
-.skill img {
-  border-radius: 5px;
-  margin: 0 10px 10px 0;
-  background: #fff;
-  padding: 5px;
-  width: 80px;
-  height: 80px;  
-}
-
-.project img {
-  float: right;
-  top: 20px;
-  width: 250px;
-  border-radius: 20px;
-  margin: 40px 5px;
+  max-width: 600px;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -318,6 +354,7 @@ footer.page-footer {
 .contact {
   display: flex;
   align-items: center;
+  padding: 20px;
 }
 
 .contact section {
