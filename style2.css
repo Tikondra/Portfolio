@@ -232,29 +232,34 @@ footer.page-footer {
 /*  04. PORTFOLIO
 /*-----------------------------------------------------------------------------------*/
 
-.portfolio-container {
-  padding: 20px;
+.portfolio-container {  
   height: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
 
 .portfolio-main {
   display: flex;
-  width: 70%;  
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  
+  width: 80%;  
+  flex-wrap: wrap;  
 }
 
 .portfolio-item {  
-  
+  width: 560px;
+  border: 1px solid #A0A0A0;
+  margin: 10px auto;
+  border-radius: 10px;
+  padding: 10px;
+  text-indent: 30px;
+  font-size: 18px;
 }
 
 .portfolio-item img {
-  width: 400px;
+  width: 350px;
   border-radius: 10px;
+  float: left;
+  margin: 15px;
 }
 
 /*-----------------------------------------------------------------------------------*/
