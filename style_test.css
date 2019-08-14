@@ -1,0 +1,408 @@
+/*-----------------------------------------------------------------------------------*/
+/*  TABLE OF CONTENTS
+/*-----------------------------------------------------------------------------------*/
+/*
+  00. BASE
+  01. HEADER
+  01.1. MAIN-MENU
+  02. FOOTER  
+  03. MAIN
+  04. PORTFOLIO
+  05. BLOG
+  06. CONTACT
+  
+*/
+
+/*-----------------------------------------------------------------------------------*/
+/*  00. BASE
+/*-----------------------------------------------------------------------------------*/
+
+html,
+body {  
+  background-color: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 18px;  
+}
+
+main {
+  height: 100%;
+  background-color: white;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAMAAAApB0NrAAAABlBMVEX///+pqalTpKl9AAAAAnRSTlMAGovxNEIAAAAdSURBVDjLY2AAAUaG4UYxDDsfjfp91O+jfqfE7wCzpQCw/dq+qQAAAABJRU5ErkJggg==");
+}
+
+a {
+  text-decoration: none;
+  color: white; 
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  01. HEADER
+/*-----------------------------------------------------------------------------------*/
+
+header.page-header {  
+  z-index: 5;  
+  padding: 10px;
+  color: white;
+  background-image:
+    linear-gradient(45deg, #34495e 25%, transparent 25%),
+    linear-gradient(-45deg, #34495e 25%, transparent 25%),
+    linear-gradient(135deg, #34495e 25%, transparent 25%),
+    linear-gradient(-135deg, #34495e 25%, transparent 25%);
+  background-position: 10px 0, 10px 0, 0 0, 0 0;
+  background-size: 20px 20px;
+  box-shadow: 0 0 5px 0 #333333;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hello h1 {
+  font-size: 60px;
+  margin: 0;
+  margin-left: 170px;
+}
+
+.logo img {
+  transform: scaleX(-1);
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 15px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  01.1 HEADER MAIN-MENU
+/*-----------------------------------------------------------------------------------*/
+.main-menu {  
+  text-align: center;  
+}
+
+.main-menu li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.main-menu a {  
+  font-size: 20px; 
+  position: relative;
+  display: inline-block;
+  outline: none;  
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0 20px;
+  height: 45px;  
+  font-weight: 300;
+  line-height: 45px; 
+}
+
+.main-menu a::before,
+.main-menu a::after {
+  position: absolute;
+  width: 45px;
+  height: 2px;
+  background-color: #ffffff;
+  content: "";
+  opacity: 0.2;
+  transition: all 0.4s;
+}
+
+.main-menu a::before {
+  top: 0;
+  left: 0;
+  transform: rotate(90deg);
+  transform-origin: 0 0;
+}
+
+.main-menu a::after {
+  right: 0;
+  bottom: 0;
+  transform: rotate(90deg);
+  transform-origin: 100% 100%;
+}
+
+.main-menu a:hover::before,
+.main-menu a:hover::after {
+  opacity: 1;
+  width: 100%;
+}
+
+.main-menu a:hover::before {
+  left: 50%;
+  transform: rotate(0deg) translateX(-50%);  
+}
+
+.main-menu a:hover::after {
+  right: 50%;
+  transform: rotate(0deg) translateX(50%);  
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  02. FOOTER
+/*-----------------------------------------------------------------------------------*/
+
+footer.page-footer {
+  height: 100px;
+  padding: 20px;
+
+  font-size: 16px;
+  color: black;
+
+  background-color: #FF9E00 ;
+  background-image:
+    linear-gradient(45deg, transparent 50%, white 50%),
+    linear-gradient(-45deg, transparent 50%, white 50%),
+    linear-gradient(135deg, transparent 50%, #2c3e50 50%),
+    linear-gradient(-135deg, transparent 50%, #2c3e50 50%);
+  background-repeat: repeat-x;
+  background-position: 0 0, 0 0, 0 100%, 0 100%;
+  background-size: 12px 12px;
+}
+
+.page-footer p {
+  margin: 0 50px;
+  font-size: 18px;
+}
+
+.page-footer h3 {
+  margin: 20px;
+  margin-bottom: 0; 
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  03. MAIN
+/*-----------------------------------------------------------------------------------*/
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px;  
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill ul {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.skill li {
+  background-color: #FF9E00;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 20px;
+  margin: 5px;
+  color: #015367;
+}
+
+.skill li:hover {
+  background-color: #FF9640;
+}
+
+.skill h3 {
+  font-size: 22px;
+  text-align: center;
+}
+
+.skil-img {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skill img {
+  border-radius: 5px;
+  margin: 5px;
+  background: #fff;
+  padding: 5px;
+  width: 80px;
+  height: 80px;  
+}
+
+.project {
+  text-indent: 20px;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+.project img { 
+  float: left;
+  width: 250px;
+  border-radius: 10px;
+  margin-right: 20px; 
+}
+
+.skill,
+.project {
+  background: #2c3e50;
+  background-image:
+    linear-gradient(45deg, rgba(52, 73, 94, 0.5) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(52, 73, 94, 0.5) 25%, transparent 25%),
+    linear-gradient(135deg, rgba(52, 73, 94, 0.5) 25%, transparent 25%),
+    linear-gradient(-135deg, rgba(52, 73, 94, 0.5) 25%, transparent 25%);
+  background-position: 10px 0, 10px 0, 0 0, 0 0;
+  background-size: 20px 20px;
+  color: white;
+  box-shadow: 10px 10px 10px 0 #4575D4;
+
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+
+  max-width: 600px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  04. PORTFOLIO
+/*-----------------------------------------------------------------------------------*/
+
+.portfolio-container {  
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.portfolio-main {
+  display: flex;
+  width: 80%;  
+  flex-wrap: wrap;  
+}
+
+.portfolio-item {  
+  width: 560px;
+  border: 1px solid #A0A0A0;
+  margin: 10px auto;
+  border-radius: 10px;
+  padding: 10px;
+  text-indent: 30px;
+  font-size: 18px;
+}
+
+.portfolio-item img {
+  width: 350px;
+  border-radius: 10px;
+  float: left;
+  margin: 15px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  05. BLOG
+/*-----------------------------------------------------------------------------------*/
+
+.blog {
+  display: grid; 
+  grid-template-columns: auto auto;
+  grid-gap: 20px;  
+  padding-top: 40px;     
+}
+
+.blog-item {
+  border-radius: 10px;  
+  width: 650px;
+  padding: 20px;
+  margin: 10px auto;
+
+  background: #2c3e50;
+  background-image:
+    linear-gradient(45deg, rgba(52, 73, 94, 0.5) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(52, 73, 94, 0.5) 25%, transparent 25%),
+    linear-gradient(135deg, rgba(52, 73, 94, 0.5) 25%, transparent 25%),
+    linear-gradient(-135deg, rgba(52, 73, 94, 0.5) 25%, transparent 25%);
+  background-position: 10px 0, 10px 0, 0 0, 0 0;
+  background-size: 20px 20px;
+  color: white;
+  box-shadow: 10px 10px 10px 0 #4575D4;
+
+  font-size: 20px;
+  line-height: 1.5em;
+  text-indent: 30px; 
+
+  position: relative;
+}
+
+.date {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 14px;
+  color: #C0C0C0;
+}
+
+.blog-item img {
+  width: 100px;
+  float: left;
+  margin: 0 10px 10px 0;
+  border-radius: 10px;
+}
+
+.red {
+  color: red;
+}
+
+.modal {
+  display: none;
+}
+
+.modal--show {
+  display: block;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  06. CONTACT
+/*-----------------------------------------------------------------------------------*/
+
+.contact {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.contact section {
+  border-left: 1px solid;
+  padding: 20px;
+  margin: 40px;
+  font-size: 20px;
+}
+
+.contact aside {
+  order: -1;
+  padding: 20px 0;
+  margin-left: 50px;
+}
+
+.contact a {
+  display: block;
+  width: 52px;
+  height: 52px;
+  background: url(img/ikon.png) no-repeat;  
+}
+
+.contact .insta {
+  background-position: -120px -2px;
+}
+
+.contact .git {  
+  background-position: -60px -2px;
+}
+
+.contact .fb {  
+  background-position: 0px -2px;
+}
+
+.contact span {
+  font-weight: bold;
+}
