@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'roboto';
+  src: url("../fonts/roboto.woff") format("woff"); }
+@font-face {
+  font-family: 'roboto';
+  src: url("../fonts/roboto.woff2") format("woff2"); }
+@font-face {
+  font-family: 'roboto';
+  src: url("../fonts/robotobold.woff") format("woff");
+  font-weight: bold; }
+@font-face {
+  font-family: 'roboto';
+  src: url("../fonts/robotobold.woff2") format("woff2");
+  font-weight: bold; }
+@font-face {
+  font-family: 'roboto';
+  src: url("../fonts/robotomedium.woff") format("woff");
+  font-weight: 500; }
+@font-face {
+  font-family: 'roboto';
+  src: url("../fonts/robotomedium.woff2") format("woff2");
+  font-weight: 500; }
+
+/*==========  GLOBAL  ==========*/
+
+html {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  font-family: roboto, "Tahoma", sans-serif;
+  font-size: 20px;  
+  font-weight: 700;
+  color: #000;  
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #000;
+}
+
+/*==========  HEADER  ==========*/
+
+.page-header {
+  padding: 10px;
+}
+
+.logo {
+  display: block;  
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__link {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
