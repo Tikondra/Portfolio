@@ -1,37 +1,15 @@
-@font-face {
-  font-family: 'roboto';
-  src: url("../fonts/roboto.woff") format("woff"); }
-@font-face {
-  font-family: 'roboto';
-  src: url("../fonts/roboto.woff2") format("woff2"); }
-@font-face {
-  font-family: 'roboto';
-  src: url("../fonts/robotobold.woff") format("woff");
-  font-weight: bold; }
-@font-face {
-  font-family: 'roboto';
-  src: url("../fonts/robotobold.woff2") format("woff2");
-  font-weight: bold; }
-@font-face {
-  font-family: 'roboto';
-  src: url("../fonts/robotomedium.woff") format("woff");
-  font-weight: 500; }
-@font-face {
-  font-family: 'roboto';
-  src: url("../fonts/robotomedium.woff2") format("woff2");
-  font-weight: 500; }
-
-/*==========  GLOBAL  ==========*/
-
 html {
   width: 100%;
 }
 
 body {
   width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
   font-family: roboto, "Tahoma", sans-serif;
   font-size: 20px;  
-  font-weight: 700;
+  font-weight: 400;
   color: #000;  
 }
 
@@ -44,24 +22,87 @@ a {
   color: #000;
 }
 
+
 /*==========  HEADER  ==========*/
 
 .page-header {
-  padding: 10px;
+  text-align: center;
 }
 
 .logo {
   display: block;  
 }
 
-.main-nav__list {
+.page-header__btn {  
+  padding: 0;
   margin: 0;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.main-nav {
+  display: none;
+}
+
+.main-nav_show {
+  display: block;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
 }
 
 .main-nav__link {
-  display: block;
-  padding: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1em;
+  padding: 0.3em 0.6em;
   text-decoration: none;
+}
+
+.main-nav__link:hover {  
+  background:
+    linear-gradient(to right, #8a2387, #e94057, #f27121);  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+}
+
+/*==========  MAIN  ==========*/
+
+.welcome {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome__title {
+  margin-left: 30px;
+}
+
+.welcome__img {    
+  border-radius: 10px;  
+}
+
+.welcome__text {
+  max-width: 800px;
+}
+
+
+
+
+
+@media (min-width: 601px) {
+  .welcome {
+    flex-wrap: nowrap;
+  }
+
 }
