@@ -6,7 +6,8 @@ function headerMenu() {
 
   openPopupButton.addEventListener('click', function (evt) {
     evt.preventDefault();
-    popup.classList.toggle('main-nav_show');    
+    popup.classList.toggle('main-nav_show');
+    openPopupButton.classList.toggle('active')
   });
 };
 

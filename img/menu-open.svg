@@ -15,8 +15,8 @@
  </g>
  <g>
   <title>Layer 1</title>
-  <line fill="none" stroke="#000" stroke-width="2" x1="3" y1="7.5" x2="27" y2="7.5" id="svg_1" stroke-linejoin="undefined" stroke-linecap="undefined"/>
-  <line fill="none" stroke="#000" stroke-width="2" x1="3" y1="15.0625" x2="27" y2="14.9375" id="svg_2" stroke-linejoin="undefined" stroke-linecap="undefined"/>
-  <line fill="none" stroke="#000" stroke-width="2" x1="3" y1="22.5" x2="27" y2="22.5" id="svg_3" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line fill="none" stroke="#39006c" stroke-width="2" x1="3" y1="7.5" x2="27" y2="7.5" id="svg_1" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line fill="none" stroke="#39006c" stroke-width="2" x1="3" y1="15.0625" x2="27" y2="14.9375" id="svg_2" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line fill="none" stroke="#39006c" stroke-width="2" x1="3" y1="22.5" x2="27" y2="22.5" id="svg_3" stroke-linejoin="undefined" stroke-linecap="undefined"/>
  </g>
 </svg>

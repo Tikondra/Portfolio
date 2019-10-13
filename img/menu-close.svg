@@ -15,7 +15,7 @@
  </g>
  <g>
   <title>Layer 1</title>
-  <line transform="rotate(45 15.000000000000007,14.999999999999998) " stroke="#000" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_1" y2="15" x2="27" y1="15" x1="3" stroke-width="1.5" fill="none"/>
-  <line transform="rotate(-45 14.99999999999999,15.000000953674315) " stroke="#000" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_3" y2="14.9375" x2="27" y1="15.0625" x1="3" stroke-width="1.5" fill="none"/>
+  <line transform="rotate(45 15.000000000000007,14.999999999999998) " stroke="#39006c" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_1" y2="15" x2="27" y1="15" x1="3" stroke-width="1.5" fill="none"/>
+  <line transform="rotate(-45 14.99999999999999,15.000000953674315) " stroke="#39006c" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_3" y2="14.9375" x2="27" y1="15.0625" x1="3" stroke-width="1.5" fill="none"/>
  </g>
 </svg>
