@@ -21,60 +21,6 @@
   text-align: center;
 }
 
-.resume {
-  position: relative;
-  display: inline-block;
-  padding: 20px 30px;
-  width: 100%;
-  color: #FF5722;
-  font-weight: 300;
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 2px;    
-  border: 1px solid #FFAB91;
-  background: none;
-  text-decoration: none;
-  outline: none;
-}
-.resume:before,
-.resume:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  opacity: 0;
-  box-sizing: border-box;
-}
-.resume:before {
-  bottom: 0;
-  left: 0;
-  border-left: 1px solid #FF5722;
-  border-top: 1px solid #FF5722;
-  transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
-}
-.resume:after {
-  top: 0;
-  right: 0;
-  border-right: 1px solid #FF5722;
-  border-bottom: 1px solid #FF5722;
-  transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s;
-}
-.resume:hover:before,
-.resume:hover:after{
-  height: 100%;
-  width: 100%;
-  opacity: 1;
-}
-.resume:hover:before {transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;}
-.resume:hover:after {transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;}
-.resume:hover {background: rgba(103, 58, 183, 0.1);}
-
-.resume:active {
-  background: rgba(103, 58, 183, 0.2);
-}
-
-
 @media (min-width: 601px) {
   .welcome {
     flex-wrap: nowrap;

@@ -1,17 +1,5 @@
 @import url("base.css");
+@import url("btn.css");
 @import url("header.css");
 @import url("welcome.css");
-
-
-.portfolio__title {
-  text-align: center;
-}
-
-.portfolio__item {
-  margin: 0;
-}
-
-.portfolio__img {
-  box-shadow: 0 0 20px #444444;  
-}
-
+@import url("portfolio.css");
