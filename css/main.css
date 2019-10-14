@@ -1,37 +1,17 @@
 @import url("base.css");
 @import url("header.css");
+@import url("welcome.css");
 
 
-.welcome {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.welcome__title {
-  font-size: 1.3em;
+.portfolio__title {
   text-align: center;
 }
 
-.welcome__img {    
-  border-radius: 10px;  
+.portfolio__item {
+  margin: 0;
 }
 
-.welcome__text {
-  max-width: 800px;
-  font-size: 1em;
-  line-height: 1.4;
-  text-align: center;
+.portfolio__img {
+  box-shadow: 0 0 20px #444444;  
 }
 
-
-
-
-
-@media (min-width: 601px) {
-  .welcome {
-    flex-wrap: nowrap;
-  }
-
-}
