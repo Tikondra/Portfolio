@@ -3,19 +3,6 @@
 @import url("header.css");
 @import url("welcome.css");
 @import url("portfolio.css");
-
-.page-footer {
-	border: 1px solid #FFAB91;
-}
-
-
-.social__list {
-	display: flex;
-	justify-content: space-around;
-	padding: 0;
-	list-style: none;
-}
-
-.social__list svg {
-	fill: #ff5722;	
-}
+@import url("skill.css");
+@import url("sertificate.css");
+@import url("footer.css");
