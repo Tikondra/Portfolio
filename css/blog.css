@@ -1,0 +1,44 @@
+.blog {
+	padding: 0;
+	list-style: none;
+}
+
+.blog__title {
+	position: relative;
+	margin: 0 auto;
+  padding: 15px;
+  max-width: 400px;
+  text-align: center;
+  
+}
+.blog__title:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 20px;
+  border-top: 2px solid #FF5722;
+  border-left: 2px solid #FF5722;
+}
+.blog__title:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+  height: 20px;
+  border-bottom: 2px solid #FF5722;
+  border-right: 2px solid #FF5722;
+}
+
+.blog__date {
+	font-size: 14px;
+	color: #969696;
+	text-align: right;
+	padding-top: 5px;
+}
+
+.blog__text {
+	text-indent: 20px;
+}
