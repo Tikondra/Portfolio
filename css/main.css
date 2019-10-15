@@ -6,3 +6,43 @@
 @import url("skill.css");
 @import url("sertificate.css");
 @import url("footer.css");
+
+.blog {
+	padding: 0;
+	list-style: none;
+}
+
+.blog__title {
+	position: relative;
+  display: table;
+  width: auto;
+  margin: 15px auto;
+  letter-spacing: 2px;
+}
+.blog__title:before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -25px;
+  width: 30px;
+  height: 20px;
+  border-top: 2px solid #fed57b;
+  border-left: 2px solid #fed57b;
+}
+.blog__title:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  right: -25px;
+  width: 30px;
+  height: 20px;
+  border-bottom: 2px solid #fed57b;
+  border-right: 2px solid #fed57b;
+}
+
+.blog__date {
+	font-size: 14px;
+	color: #969696;
+	text-align: right;
+	padding-top: 5px;
+}
