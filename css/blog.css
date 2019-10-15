@@ -44,11 +44,12 @@
 	margin-bottom: 20px;
 	border: 1px solid transparent;
 	max-height: 380px;
-	overflow: auto;
+	overflow: hidden;
 }
 
 .blog__text-box:hover {
 	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+	overflow: scroll;
 }
 
 .blog__date {
