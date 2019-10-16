@@ -13,3 +13,4 @@ Thumbs.db
 *.json
 gulpfile.js
 dist/
+sass/
