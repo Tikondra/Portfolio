@@ -1,0 +1,17 @@
+.portfolio__title {
+	text-align: center;
+}
+.portfolio__item {
+	margin: 0;
+}
+.portfolio__img {
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 0.3s;
+	transition-property: box-shadow;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	&:hover {
+		box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+	}
+}
