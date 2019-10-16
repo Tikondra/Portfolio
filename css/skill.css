@@ -1,6 +1,11 @@
 .skill__list {
-	display: flex;
-	justify-content: space-between;
-	padding: 0;
-	list-style: none;
-}
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  list-style: none; }
