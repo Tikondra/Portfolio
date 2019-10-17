@@ -11,7 +11,39 @@ var gulp       = require('gulp'), // Подключаем Gulp
     imagemin     = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
     pngquant     = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
     cache        = require('gulp-cache'), // Подключаем библиотеку кеширования
-    autoprefixer = require('gulp-autoprefixer');// Для автоматического добавления префиксов
+    autoprefixer = require('gulp-autoprefixer'),// Для автоматического добавления префиксов
+    pug          = require('gulp-pug'),
+    htmlbeautify = require('gulp-html-beautify'),
+    plumber      = require('gulp-plumber'),
+    notify       = require('gulp-notify');
+
+gulp.task('pug', function() {
+  return gulp.src("pug/*.pug")
+      .pipe(plumber({
+          errorHandler: notify.onError()
+      }))
+      .pipe(pug())
+      .pipe(htmlbeautify())
+      .pipe(gulp.dest("./"))      
+      .pipe(browserSync.stream());
+});
+
+gulp.task('htmlbeautify', function() {
+    var options = {
+        indentSize: 2,
+        unformatted: [
+            // https://www.w3.org/TR/html5/dom.html#phrasing-content
+             'abbr', 'area', 'b', 'bdi', 'bdo', 'br', 'cite',
+            'code', 'data', 'datalist', 'del', 'dfn', 'em', 'embed', 'i', 'ins', 'kbd', 'keygen', 'map', 'mark', 'math', 'meter', 'noscript',
+            'object', 'output', 'progress', 'q', 'ruby', 's', 'samp', 'small',
+             'strong', 'sub', 'sup', 'template', 'time', 'u', 'var', 'wbr', 'text',
+            'acronym', 'address', 'big', 'dt', 'ins', 'strike', 'tt'
+        ] 
+    };
+gulp.src('./*.html')
+    .pipe(htmlbeautify(options))
+    .pipe(gulp.dest('./'))
+});
 
 gulp.task('sass', function() { // Создаем таск Sass
     return gulp.src('styles/main.scss') // Берем источник
