@@ -1,4 +1,4 @@
-* text eol=lf
+* text=auto
 
 *.png binary
 *.jpg binary
@@ -6,3 +6,5 @@
 *.webp binary
 *.woff binary
 *.woff2 binary
+*.pdf  diff=astextplain
+*.PDF  diff=astextplain
