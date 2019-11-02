@@ -18,6 +18,11 @@ img {
 a {
   color: #000; }
 
+.container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 15px; }
+
 .btn {
   position: relative;
   display: inline-block;
@@ -49,16 +54,14 @@ a {
     -webkit-transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s;
     -o-transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s;
     transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s; }
-  .btn:hover {
-    background: rgba(103, 58, 183, 0.1); }
-    .btn:hover:before {
-      -webkit-transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
-      -o-transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
-      transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s; }
-    .btn:hover:after {
-      -webkit-transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;
-      -o-transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;
-      transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s; }
+  .btn:hover:before {
+    -webkit-transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+    -o-transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+    transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s; }
+  .btn:hover:after {
+    -webkit-transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;
+    -o-transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;
+    transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s; }
   .btn:active {
     background: rgba(103, 58, 183, 0.2); }
 
@@ -190,10 +193,29 @@ a {
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap; } }
 
+@media (min-width: 768px) {
+  .welcome {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; } }
+
 .portfolio__title {
   text-align: center; }
 
+.portfolio__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
 .portfolio__item {
+  max-width: 300px;
   margin: 0; }
 
 .portfolio__img {

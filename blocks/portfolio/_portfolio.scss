@@ -1,7 +1,17 @@
 .portfolio__title {
 	text-align: center;
 }
+
+.portfolio__list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
 .portfolio__item {
+	max-width: 300px;
 	margin: 0;
 }
 .portfolio__img {

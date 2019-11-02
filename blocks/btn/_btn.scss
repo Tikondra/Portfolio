@@ -28,7 +28,7 @@
 		transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s;
 	}
 	&:hover {
-		background: rgba(103, 58, 183, 0.1);
+		
 		&:before {
 			transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
 		}

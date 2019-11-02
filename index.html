@@ -48,18 +48,24 @@
           <a class="resume btn" href="resume.pdf" download="VedeneevaResume">Скачать резюме</a>
         </div>
       </section>
-      <section class="portfolio">
+      <section class="portfolio container">
         <h2 class="portfolio__title">Мои работы</h2>
-        <figure class="portfolio__item">
-          <a href="https://tikondra.github.io/1122313-gllacy-26/">
-            <img class="portfolio__img" src="img/gllacy.jpg">
-          </a>          
-        </figure>
-        <figure class="portfolio__item">
-          <a href="https://tikondra.github.io/1122313-gllacy-26/">
-            <img class="portfolio__img" src="img/tehnomart.jpg">
-          </a>          
-        </figure>
+        <ul class="portfolio__list">
+          <li>
+            <figure class="portfolio__item">
+              <a href="https://tikondra.github.io/1122313-gllacy-26/">
+                <img class="portfolio__img" src="img/gllacy.jpg">
+              </a>          
+            </figure>
+          </li>
+          <li>
+            <figure class="portfolio__item">
+              <a href="https://tikondra.github.io/1122313-gllacy-26/">
+                <img class="portfolio__img" src="img/tehnomart.jpg">
+              </a>          
+            </figure>
+          </li>
+        </ul>        
         <a class="resume btn" href="portfolio.html">Портфолио</a>
       </section>
       <section class="skill">
@@ -89,6 +95,7 @@
         </p>
         <img class="sertificate__img" src="img/0001.jpg">
       </section>
+      <div id="like_button_container"></div>
     </main>
     <footer class="page-footer">
       <div class="social">
@@ -128,5 +135,11 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+  
+    <script src="like_button.js"></script>
   </body>
 </html>
