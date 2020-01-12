@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Frontend 3.0</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  </head>
+  <body>
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <header class="page-header">
+      <a class="logo">
+        <img src="img/logo1.svg" width="300" alt="Tikondra. Web-deweloper">
+      </a>
+      <button class="page-header__btn btn" type="button" aria-label="menu">MENU</button>
+      <nav class="main-nav" id="panel">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="portfolio.html">
+              Портфолио
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="contact.html">
+              Обо мне
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="blog.html">
+              Блог
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="welcome">
+        <img class="welcome__img" src="img/me.jpg" width="300px" height="300px">
+        <div class="welcome__box">
+          <h2 class="welcome__title">Добро пожаловать</h2>
+          <p class="welcome__text">
+            Меня зовут Дарья, я&nbsp;frontend-разработчик.
+          </p>
+          <p class="welcome__text">
+            Люблю свою работу, и делаю ее хорошо. В поисках команды своей мечты, для совместного покорения новых высот фронтенда.
+          </p>
+          <a class="resume btn" href="files/resume.pdf" download="VedeneevaResume">Скачать резюме</a>
+        </div>
+      </section>
+      <section class="portfolio container">
+        <h2 class="portfolio__title">Мои работы</h2>
+        <ul class="portfolio__list">
+          <li>
+            <figure class="portfolio__item">
+              <a href="https://tikondra.github.io/1122313-gllacy-26/">
+                <img class="portfolio__img" src="img/gllacy.jpg">
+              </a>
+            </figure>
+          </li>
+          <li>
+            <figure class="portfolio__item">
+              <a href="https://tikondra.github.io/1122313-gllacy-26/">
+                <img class="portfolio__img" src="img/tehnomart.jpg">
+              </a>
+            </figure>
+          </li>
+        </ul>
+        <a class="resume btn" href="portfolio.html">Портфолио</a>
+      </section>
+      <section class="skill">
+        <p class="welcome__text">
+          В работе применяю семантическую верстку, и другие современные веб-технологии. Всегда слежу за трендами и повышаю свои навыки.
+        </p>
+        <p class="welcome__text">
+          Использую систему контроля версий Git, сборщик проектов Gulp, препроцессор Sass. Адаптивная верстка, mobaile first, css3, html5, JavaScript. Постоянно пополняю свой арсенал новыми технологиями и знаниями.
+        </p>
+        <div class="skill__box">
+          <ul class="skill__list">
+            <li>
+              <img src="img/html5.png" width="56" height="56">
+            </li>
+            <li>
+              <img src="img/css3.png" width="56" height="56">
+            </li>
+            <li>
+              <img src="img/js.png" width="56" height="56">
+            </li>
+            <li>
+              <img src="img/git.png" width="56" height="56">
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="sertificat">
+        <p class="welcome__text">
+          Вы также можете ознакомиться с моими <a class="btn" href="contact.html">сертификатами</a>.
+        </p>
+        <img class="sertificate__img" src="img/0001.jpg">
+      </section>
+      <div class="like_button"></div>
+    </main>
+    <footer class="page-footer">
+      <div class="social">
+        <ul class="social__list">
+          <li>
+            <a class="social__link" href="mailto:tikondra47@gmail.com" title="Электронная почта">
+              <svg aria-hidden="true" width="35" height="35">
+                <use xlink:href="#icon-mail"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social__link" href="https://github.com/Tikondra" title="Дарья в Гитхабе">
+              <svg aria-hidden="true" width="35" height="35">
+                <use xlink:href="#icon-github"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social__link" href="https://t.me/tikondra" title="Дарья в Телеграме">
+              <svg aria-hidden="true" width="35" height="35">
+                <use xlink:href="#icon-telegram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-info">
+        <a href="tel:89375097838">Tel: 8 937 509 7838</a>
+        <p class="footer-info__text">г.Астрахань</p>
+      </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>
