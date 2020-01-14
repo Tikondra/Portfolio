@@ -11,30 +11,35 @@
     <div style="display: none;">
       <include src="build/img/sprite.svg"></include>
     </div>
-    <header class="page-header">
-      <a class="logo">
-        <img src="img/logo1.svg" width="300" alt="Tikondra. Web-deweloper">
-      </a>
-      <button class="page-header__btn btn" type="button" aria-label="menu">MENU</button>
-      <nav class="main-nav" id="panel">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="portfolio.html">
-              Портфолио
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="contact.html">
-              Обо мне
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="blog.html">
-              Блог
-            </a>
-          </li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="header__wrapper">
+        <a class="logo">
+          <img src="img/logo1.svg" width="200" height="50" alt="Tikondra. Web-deweloper">
+        </a>
+        <nav class="navigation">
+          <input type="checkbox" class="navigation__check" id="menu-cb"/>
+          <div class="navigation__content">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="portfolio.html">
+                  Портфолио
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="contact.html">
+                  Обо мне
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="blog.html">
+                  Блог
+                </a>
+              </li>
+            </ul>
+          </div>
+          <label class="navigation__btn" for="menu-cb"></label>
+        </nav>
+      </div>
     </header>
     <main>
       <section class="welcome">
@@ -94,13 +99,33 @@
           </ul>
         </div>
       </section>
+      <svg class="wave-divider" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+          <defs>
+              <path id="gentle-wave"
+              d="M-160 44c30 0
+              58-18 88-18s
+              58 18 88 18
+              58-18 88-18
+              58 18 88 18
+              v44h-352z" />
+          </defs>
+          <g class="wave-parallax1"><use xlink:href="#gentle-wave" x="50" y="3" fill="#BFE2FF"/></g>
+          <g class="wave-parallax2"><use xlink:href="#gentle-wave" x="50" y="0" fill="#5e9cd1"/></g>
+          <g class="wave-parallax3"><use xlink:href="#gentle-wave" x="50" y="9" fill="#73bbf5"/></g>
+          <g class="wave-parallax4"><use xlink:href="#gentle-wave" x="50" y="6" fill="#337AB7"/></g>
+      </svg>
       <section class="sertificat">
         <p class="welcome__text">
           Вы также можете ознакомиться с моими <a class="btn" href="contact.html">сертификатами</a>.
         </p>
         <img class="sertificate__img" src="img/0001.jpg">
       </section>
-      <div class="like_button"></div>
+          <svg class="wave-divider dark-bg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+          <g class="wave-parallax1"><use xlink:href="#gentle-wave" x="50" y="3" fill="#5e9cd1"/></g>
+          <g class="wave-parallax2"><use xlink:href="#gentle-wave" x="50" y="0" fill="#73bbf5"/></g>
+          <g class="wave-parallax3"><use xlink:href="#gentle-wave" x="50" y="9" fill="#BFE2FF"/></g>
+          <g class="wave-parallax4"><use xlink:href="#gentle-wave" x="50" y="6" fill="#FFFFFF"/></g>
+      </svg>
     </main>
     <footer class="page-footer">
       <div class="social">
