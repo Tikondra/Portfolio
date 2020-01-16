@@ -5,47 +5,73 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   </head>
   <body>
-    <header class="page-header">
-      <a href="index.html" class="logo">
-        <img src="img/logo1.svg" width="300px" alt="Tikondra. Web-deweloper">
-      </a>
-      <button class="page-header__btn btn" type="button" aria-label="menu">MENU</button>
-      <nav class="main-nav" id="panel">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
-              Портфолио
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="contact.html">
-              Обо мне
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="blog.html">
-              Блог
-            </a>
-          </li>
-        </ul>
-      </nav>
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <header class="header">
+      <div class="header__wrapper">
+        <a class="logo" href="index.html">
+          <img src="img/logo1.svg" width="200" height="50" alt="Tikondra. Web-deweloper">
+        </a>
+        <nav class="navigation">
+          <input type="checkbox" class="navigation__check" id="menu-cb"/>
+          <div class="navigation__content">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link">
+                  Портфолио
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="contact.html">
+                  Обо мне
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="blog.html">
+                  Блог
+                </a>
+              </li>
+            </ul>
+          </div>
+          <label class="navigation__btn" for="menu-cb"></label>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <h2 class="portfolio__title">Мои работы</h2>
-      <figure class="portfolio__item">
-        <a href="https://tikondra.github.io/1122313-gllacy-26/">
-          <img class="portfolio__img" src="img/gllacy.jpg">
-        </a>
-      </figure>
-      <figure class="portfolio__item">
-        <a href="https://tikondra.github.io/1122313-gllacy-26/">
-          <img class="portfolio__img" src="img/tehnomart.jpg">
-        </a>
-      </figure>
+      <section class="portfolio">
+        <div class="portfolio__wrapper">
+          <h2 class="portfolio__title">Мои работы</h2>
+          <ul class="portfolio__list">
+            <li class="portfolio__item">
+              <a class="portfolio__link" href="https://htmlacademy-adaptive.github.io/1122313-pognali-18/22/">
+                <picture>
+                  <img class="portfolio__img" src="img/pognali-preview.jpg">
+                </picture>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a class="portfolio__link" href="https://tikondra.github.io/1122313-gllacy-26/">
+                <picture>
+                  <img class="portfolio__img" src="img/gllacy.jpg">
+                </picture>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a class="portfolio__link" href="https://tikondra.github.io/1122313-gllacy-26/">
+                <picture>
+                  <img class="portfolio__img" src="img/tehnomart.jpg">
+                </picture>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">
