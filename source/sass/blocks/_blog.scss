@@ -59,3 +59,21 @@
 .blog__img {
 	max-width: 192px;
 }
+
+.blog__item {
+  padding: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .blog {
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  .blog__text-box {
+
+    &:hover {
+      overflow: visible;
+    }
+  }
+}

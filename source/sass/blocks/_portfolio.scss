@@ -25,6 +25,10 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
+
+    &--page {
+      flex-wrap: wrap;
+    }
   }
 
   .portfolio__item {
@@ -50,6 +54,23 @@
 
     &:hover {
       box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  .portfolio__list--page {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+
+    .portfolio__item {
+      width: 100%;
+
+      &:nth-child(2) {
+        grid-area: 1/2/3/5;
+      }
+
+      &:nth-child(3) {
+        grid-area: 2/1/3/2;
+      }
     }
   }
 }
