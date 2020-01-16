@@ -1,22 +1,21 @@
 .welcome {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  padding: 20px;
 }
+
 .welcome__title {
-  font-size: 1.3em;
   text-align: center;
 }
+
 .welcome__img {
+  margin: auto;
   border-radius: 10px;
 }
+
 .welcome__text {
-  max-width: 800px;
-  font-size: 0.8em;
   line-height: 1.4;
   text-align: center;
 }
+
 @media(min-width: 610px) {
   .welcome {
     flex-wrap: nowrap;
