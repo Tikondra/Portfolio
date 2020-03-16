@@ -60,12 +60,13 @@
   .portfolio__list--page {
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-gap: 15px;
 
     .portfolio__item {
       width: 100%;
 
       &:nth-child(2) {
-        grid-area: 1/2/3/5;
+        grid-area: 1/2/3/4;
       }
 
       &:nth-child(3) {
@@ -73,7 +74,15 @@
       }
 
       &:nth-child(4) {
-        grid-area: 3/1/4/3;
+        grid-area: 3/1/5/3;
+      }
+
+      &:nth-child(5) {
+        grid-area: 3/3/4/4;
+      }
+
+      &:nth-child(6) {
+        grid-area: 4/3/5/4;
       }
     }
   }
