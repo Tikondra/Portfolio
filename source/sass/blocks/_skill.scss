@@ -1,16 +1,20 @@
-.skill__wrapper {
+.skill {
   padding: 20px;
 }
 
 .skill__list {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	padding: 0;
 	list-style: none;
 }
 
+.skill__item {
+  margin: 0 10px;
+}
+
 @media screen and (min-width: 1024px) {
-  .skill__wrapper {
+  .skill {
     max-width: 1200px;
     margin: auto;
   }

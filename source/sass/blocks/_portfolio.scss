@@ -1,9 +1,10 @@
-.portfolio__wrapper {
+.portfolio {
+  max-width: 660px;
+  margin: auto;
   padding: 20px;
 }
 
 .portfolio__title {
-	text-align: center;
   margin: 0 0 30px;
 }
 
@@ -13,14 +14,64 @@
 
 .portfolio__link {
   display: block;
+  border-radius: 3px;
+  overflow: hidden;
 }
 
-.portfolio__img {
-	border-radius: 3px;
-	margin-bottom: 20px;
+.portfolio__item {
+  position: relative;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 25px rgba(150, 149, 149, 0.5);
+
+  &:hover {
+    .portfolio__description {
+      height: 100%;
+      opacity: 1;
+    }
+  }
+}
+
+.portfolio__description {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 0;
+  padding: 20px;
+  color: #fff;
+  background-color: #000000c4;
+  transition: 0.3s ease;
+  opacity: 0;
+  overflow: hidden;
+  text-align: center;
+
+  h3 {
+    width: 100%;
+    line-height: 30px;
+  }
+
+  a {
+    width: 100%;
+    text-align: right;
+    margin-left: auto;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.portfolio__text {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
+  .portfolio {
+    max-width: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .portfolio__list {
     display: flex;
     justify-content: space-between;
@@ -28,6 +79,10 @@
 
     &--page {
       flex-wrap: wrap;
+
+      li {
+        margin-bottom: 20px;
+      }
     }
   }
 
@@ -38,10 +93,19 @@
   .portfolio__img {
     margin-bottom: 0;
   }
+
+  .portfolio__text {
+    display: block;
+  }
+
+  .portfolio__btn {
+    max-width: 220px;
+    margin-left: auto;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-  .portfolio__wrapper {
+  .portfolio {
     max-width: 1200px;
     margin: auto;
   }
@@ -54,36 +118,6 @@
 
     &:hover {
       box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.4);
-    }
-  }
-
-  .portfolio__list--page {
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-gap: 15px;
-
-    .portfolio__item {
-      width: 100%;
-
-      &:nth-child(2) {
-        grid-area: 1/2/3/4;
-      }
-
-      &:nth-child(3) {
-        grid-area: 2/1/3/2;
-      }
-
-      &:nth-child(4) {
-        grid-area: 3/1/5/3;
-      }
-
-      &:nth-child(5) {
-        grid-area: 3/3/4/4;
-      }
-
-      &:nth-child(6) {
-        grid-area: 4/3/5/4;
-      }
     }
   }
 }

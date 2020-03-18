@@ -44,44 +44,60 @@
     </header>
     <main>
       <section class="welcome">
-        <div class="welcome__wrapper">
-          <img class="welcome__img" src="img/me.jpg" width="300px" height="300px">
-          <div class="welcome__box">
-            <h2 class="welcome__title">Добро пожаловать</h2>
-            <p class="welcome__text">
-              Меня зовут Дарья, <br>я&nbsp;frontend-разработчик.
-            </p>
-            <p class="welcome__text">
-              Люблю свою работу, и&nbsp;делаю ее хорошо. В&nbsp;поисках команды своей мечты, для совместного покорения новых высот фронтенда.
-            </p>
-            <a class="welcome__rezume btn" href="files/resume.pdf" download="VedeneevaResume">Скачать резюме</a>
-          </div>
+        <picture>
+          <source srcset="img/me.webp" type="image/webp">
+          <img class="welcome__img" src="img/me.jpg" width="300px" height="300px" alt="Веденеева Дарья">
+        </picture>
+        <div class="welcome__box">
+          <h2 class="welcome__title">Добро пожаловать</h2>
+          <p class="welcome__text">
+            Меня зовут Дарья, и я frontend-разработчик.
+          </p>
+          <p class="welcome__text">
+            В этой области я сравнительно недавно. Около года. Но эта работа мне действительно нравится, поэтому я постояно двигаюсь вперед и&nbsp;совершенствую свои навыки. Продолжаю учиться и узнавать новое, ведь мир фронтенда не стоит месте. Это круто!
+          </p>
+          <p class="welcome__text">
+            В данный момент я в активном поиске места работы, на котором я смогла бы продолжать развиваться как специалист. Работать над интересными и трудными задачками.
+          </p>
+          <a class="welcome__rezume btn" href="files/resume.pdf" download="VedeneevaResume">Скачать резюме</a>
         </div>
       </section>
       <section class="portfolio">
-        <div class="portfolio__wrapper">
-          <h2 class="portfolio__title">Мои работы</h2>
-          <ul class="portfolio__list">
-            <li class="portfolio__item">
-              <a class="portfolio__link" href="https://htmlacademy-adaptive.github.io/1122313-pognali-18/22/">
-                <picture>
-                  <img class="portfolio__img" src="img/pognali-preview.jpg" width="636" height="360" alt="Погнали. Adaptive">
-                </picture>
-              </a>
-            </li>
-            <li class="portfolio__item">
-              <a class="portfolio__link" href="https://tikondra.github.io/Gllacy/">
-                <picture>
-                  <img class="portfolio__img" src="img/gllacy.jpg" width="636" height="360" alt="Gllacy. Static">
-                </picture>
-              </a>
-            </li>
-          </ul>
-          <a class="portfolio__btn btn" href="portfolio.html">Портфолио</a>
-        </div>
+        <h2 class="portfolio__title">Мои работы:</h2>
+        <ul class="portfolio__list">
+          <li class="portfolio__item">
+            <a class="portfolio__link" href="https://htmlacademy-adaptive.github.io/1122313-pognali-18/22/" target="_blank">
+              <picture>
+                <source srcset="img/works/pognali-preview.webp" type="image/webp">
+                <img src="img/works/pognali-preview.jpg" width="636" height="360" alt="Погнали">
+              </picture>
+            </a>
+            <div class="portfolio__description">
+              <h3>Сервис подбора спутников "Погнали"</h3>
+              <p class="portfolio__text">Учебный проект HTML Academy. Верстка. Адаптив.</p>
+              <a href="https://htmlacademy-adaptive.github.io/1122313-pognali-18/22/" target="_blank">Перейти на сайт</a>
+            </div>
+          </li>
+          <li class="portfolio__item">
+            <a class="portfolio__link" href="https://tikondra.github.io/kolheti/" target="_blank">
+              <picture>
+                <source srcset="img/works/kolheti.webp" type="image/webp">
+                <img src="img/works/kolheti.jpg" width="636" height="360" alt="kolheti">
+              </picture>
+            </a>
+            <div class="portfolio__description">
+              <h3>Таверна национальной грузинской кухни "Колхети"</h3>
+              <p class="portfolio__text">
+                Комерческий заказ. Верстка. Адаптив. JS.
+              </p>
+              <a href="https://tikondra.github.io/kolheti/" target="_blank">Перейти на сайт</a>
+            </div>
+          </li>
+        </ul>
+        <a class="portfolio__btn btn" href="portfolio.html">Портфолио</a>
       </section>
       <section class="skill">
-        <div class="skill__wrapper">
+        <h2>Мои инструменты и&nbsp;навыки:</h2>
           <p class="welcome__text">
             В работе применяю семантическую верстку, и другие современные веб-технологии. Всегда слежу за трендами и повышаю свои навыки.
           </p>
@@ -90,39 +106,40 @@
           </p>
           <div class="skill__box">
             <ul class="skill__list">
-              <li>
+              <li class="skill__item">
                 <img src="img/html5.png" width="56" height="56">
               </li>
-              <li>
+              <li class="skill__item">
                 <img src="img/css3.png" width="56" height="56">
               </li>
-              <li>
+              <li class="skill__item">
                 <img src="img/js.png" width="56" height="56">
               </li>
-              <li>
+              <li class="skill__item">
                 <img src="img/git.png" width="56" height="56">
               </li>
             </ul>
           </div>
-        </div>
       </section>
       <section class="sertificate">
-        <div class="sertificate__wrapper">
-          <p class="sertificate__text">
-            Вы также можете ознакомиться с моими <a class="sertificate__link" href="contact.html">сертификатами</a>.
-          </p>
-          <ul class="sertificate__list">
-            <li class="sertificate__item"><img class="sertificate__img" src="img/lvl1.webp"></li>
-            <li class="sertificate__item"><img class="sertificate__img" src="img/lvl2.webp"></li>
-          </ul>
-        </div>
+        <p class="sertificate__text">
+          Вы также можете ознакомиться с остальными моими <a class="sertificate__link" href="contact.html">сертификатами</a>.
+        </p>
+        <ul class="sertificate__list">
+          <li class="sertificate__item">
+            <picture>
+              <source srcset="img/sertificate/lvl2.webp" type="image/webp">
+              <img class="sertificate__img" src="img/sertificate/lvl2.jpg">
+            </picture>
+          </li>
+          <li class="sertificate__item">
+            <picture>
+              <source srcset="img/sertificate/lvl3.webp" type="image/webp">
+              <img class="sertificate__img" src="img/sertificate/lvl2.jpg">
+            </picture>
+          </li>
+        </ul>
       </section>
-      <!-- <svg class="wave-divider dark-bg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
-        <g class="wave-parallax1"><use xlink:href="#gentle-wave" x="50" y="3" fill="#5e9cd1"/></g>
-        <g class="wave-parallax2"><use xlink:href="#gentle-wave" x="50" y="0" fill="#73bbf5"/></g>
-        <g class="wave-parallax3"><use xlink:href="#gentle-wave" x="50" y="9" fill="#BFE2FF"/></g>
-        <g class="wave-parallax4"><use xlink:href="#gentle-wave" x="50" y="6" fill="#FFFFFF"/></g>
-      </svg> -->
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
