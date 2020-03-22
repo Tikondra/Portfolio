@@ -2,6 +2,23 @@
   padding: 20px;
 }
 
+.skill__text {
+  line-height: 22px;
+}
+
+.skill__tools {
+  @include list;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill__tool {
+  padding: 10px 15px;
+  margin: 5px;
+  border: 2px solid $orange;
+  border-radius: 5px;
+}
+
 .skill__list {
 	display: flex;
 	justify-content: center;
@@ -11,6 +28,21 @@
 
 .skill__item {
   margin: 0 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .skill {
+    display: flex;
+  }
+
+  .skill__content {
+    padding: 20px;
+    width: 60%;
+  }
+
+  .skill__box {
+    margin: auto;
+  }
 }
 
 @media screen and (min-width: 1024px) {

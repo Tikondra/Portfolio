@@ -88,7 +88,7 @@
             <div class="portfolio__description">
               <h3>Таверна национальной грузинской кухни "Колхети"</h3>
               <p class="portfolio__text">
-                Комерческий заказ. Верстка. Адаптив. JS.
+                Коммерческий заказ. Верстка. Адаптив. JS.
               </p>
               <a href="https://tikondra.github.io/kolheti/" target="_blank">Перейти на сайт</a>
             </div>
@@ -97,29 +97,35 @@
         <a class="portfolio__btn btn" href="portfolio.html">Портфолио</a>
       </section>
       <section class="skill">
-        <h2>Мои инструменты и&nbsp;навыки:</h2>
-          <p class="welcome__text">
-            В работе применяю семантическую верстку, и другие современные веб-технологии. Всегда слежу за трендами и повышаю свои навыки.
+        <div class="skill__content">
+          <h2>Мои инструменты и&nbsp;навыки:</h2>
+          <p class="skill__text">
+            Мой основной стек это - <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>.
           </p>
-          <p class="welcome__text">
-            Использую систему контроля версий Git, сборщик проектов Gulp, препроцессор Sass. Адаптивная верстка, mobaile first, css3, html5, JavaScript. Постоянно пополняю свой арсенал новыми технологиями и знаниями.
+          <p class="skill__text">
+            Придерживаюсь семантической, валидной и кроссбраузерной верстки. Пользуюсь методологией <b>БЭМ</b>. Слежу за появлением новых стандартов.
           </p>
-          <div class="skill__box">
-            <ul class="skill__list">
-              <li class="skill__item">
-                <img src="img/html5.png" width="56" height="56">
-              </li>
-              <li class="skill__item">
-                <img src="img/css3.png" width="56" height="56">
-              </li>
-              <li class="skill__item">
-                <img src="img/js.png" width="56" height="56">
-              </li>
-              <li class="skill__item">
-                <img src="img/git.png" width="56" height="56">
-              </li>
-            </ul>
-          </div>
+          <p class="skill__text">
+            При создании адаптивных интерфейсов и сайтов пользуюсь методом mobaile first. Для более быстрого и качественного написания стилей использую препроцессор <b>Sass</b>(scss).
+          </p>
+          <p class="skill__text">
+            JavaScript использую нативный. В данный момент прохожу обучение на курсе по <b>React</b>, и очень скоро добавлю его к своему арсеналу.
+          </p>
+          <p class="skill__text">
+            Так же для автоматизации и улучшения своей работы использую следующие инструменты:
+          </p>
+          <ul class="skill__tools">
+            <li class="skill__tool">Git</li>
+            <li class="skill__tool">Gulp</li>
+            <li class="skill__tool">WebPack</li>
+            <li class="skill__tool">Travis</li>
+            <li class="skill__tool">EditorConfig</li>
+            <li class="skill__tool">ESLint</li>
+          </ul>
+        </div>
+        <div class="skill__box">
+          <img src="img/tools.svg" width="300" alt="инструменты">
+        </div>
       </section>
       <section class="sertificate">
         <p class="sertificate__text">
@@ -189,7 +195,6 @@
       <g class="wave-parallax3"><use xlink:href="#gentle-wave" x="50" y="9" fill="#73bbf5"/></g>
       <g class="wave-parallax4"><use xlink:href="#gentle-wave" x="50" y="6" fill="#337AB7"/></g>
     </svg>
-    <script src="js/jquery.min.js"></script>
     <script src="js/script.min.js"></script>
   </body>
 </html>

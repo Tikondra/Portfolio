@@ -1,0 +1,23 @@
+.social {
+	border: 1px solid #FFAB91;
+  background-color: #fff;
+}
+.social__list {
+	display: flex;
+	justify-content: space-around;
+	padding: 0;
+	list-style: none;
+	svg {
+		fill: #ff5722;
+	}
+}
+
+.social__link {
+  display: block;
+
+  &:hover {
+    svg {
+      fill: red;
+    }
+  }
+}
